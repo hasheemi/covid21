@@ -1,0 +1,114 @@
+table {
+  border: 1px solid rgba(66, 65, 65, 0.5);
+  margin: 20px auto;
+  border-collapse: collapse;
+  overflow-x: scroll !important;
+  border-radius: 8px;
+  width: 50%;
+}
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid rgba(31, 30, 30, 0.562);
+}
+th {
+  background-color: #272c7c;
+  color: #fff;
+}
+table img {
+  width: 50px;
+}
+
+table td.positif {
+  background-color: rgba(252, 135, 135, 0.973);
+  color: rgb(255, 4, 0);
+  font-weight: 550;
+}
+table td.sembuh {
+  background-color: rgb(110, 255, 173);
+  color: green;
+  font-weight: 550;
+}
+table td.meninggal {
+  background-color: rgb(158, 154, 154);
+  color: black;
+  font-weight: 550;
+}
+#myInput {
+  width: 75%;
+  height: 40px;
+  /* margin: 10px 25vw !important; */
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid rgba(128, 128, 128, 0.527);
+}
+.none {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  table#myTable {
+    width: 80vw !important;
+    overflow-x: scroll !important;
+
+    margin-left: 10px !important;
+  }
+  #myInput {
+    width: 90%;
+    margin: 10px !important;
+  }
+  .table-tools {
+    width: 100% !important;
+  }
+  select {
+    width: 10%;
+    outline: 1px solid rgb(49, 48, 48);
+    height: 40px;
+    margin-top: 9px;
+  }
+}
+.table-co {
+  overflow-x: auto;
+}
+.pagination {
+  width: 300px;
+  margin: 20px auto;
+}
+.pagination button {
+  padding: 8px;
+  margin: 5px;
+  border: none;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.527);
+}
+.pagination button:hover,
+.pagination button.active {
+  background-color: #eb0065;
+  color: aliceblue;
+}
+.detail-link {
+  background-color: #272c7c;
+  color: #fff;
+  padding: 9px 10px;
+  border-radius: 6px;
+}
+.detail-link:hover {
+  background-color: #eb0065;
+  color: #fff;
+}
+.table-tools {
+  width: 50%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+select {
+  width: 20%;
+}
+select option:hover {
+  background-color: #eb0065 !important;
+  color: #fff;
+}

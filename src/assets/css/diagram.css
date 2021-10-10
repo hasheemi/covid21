@@ -1,0 +1,156 @@
+.diagram-container {
+  width: 80vw;
+  height: 400px;
+
+  margin: 40px 10vw 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.chart-con {
+  box-shadow: 1px 2px 20px rgba(78, 77, 77, 0.507);
+  width: 55vw;
+  height: 100%;
+  border-radius: 10px;
+}
+.controller {
+  width: 20vw;
+  height: 100%;
+  box-shadow: 1px 2px 20px rgba(78, 77, 77, 0.507);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 19px;
+  text-align: left;
+}
+.box-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin: 0 15px 0 10px;
+  border-radius: 4px;
+}
+.positif-rad .box-icon {
+  background-color: red;
+}
+.sembuh-rad .box-icon {
+  background-color: green;
+}
+.meninggal-rad .box-icon {
+  background-color: black;
+}
+input[name="control"] {
+  display: none;
+}
+.controller div {
+  margin-left: 20px;
+}
+.positif-rad,
+.sembuh-rad,
+.meninggal-rad {
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+.controller .positif-rad:hover,
+.sembuh-rad:hover,
+.meninggal-rad:hover {
+  background-color: rgba(128, 128, 128, 0.523);
+}
+#sembuh:checked ~ .sembuh-rad,
+#positif:checked ~ .postif-rad,
+#meninggal:checked ~ .meninggal-rad {
+  background-color: rgba(128, 128, 128, 0.523);
+}
+@media (max-width: 600px) {
+  .diagram-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+  .chart-con,
+  .controller {
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: none;
+    background: transparent;
+    box-shadow: 10px 0px 20px 0px rgba(128, 128, 128, 0.523);
+  }
+
+  .controller {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: auto;
+    /* box-shadow: 10px 0px 20px 0px rgba(128, 128, 128, 0.523); */
+    margin-bottom: 60px;
+  }
+  .rad {
+    width: 40%;
+    flex-wrap: nowrap;
+  }
+  /* .diagram-container {
+    box-shadow: 1px 2px 20px rgba(78, 77, 77, 0.507) !important;
+  } */
+  .chart-con canvas {
+    width: 80%;
+    margin-top: 50px !important;
+    height: 30% !important;
+  }
+  .chart-con h1 {
+    font-size: 15px;
+    margin-top: 20px !important;
+  }
+  [name="chart"] {
+    width: 100%;
+    height: 85vh !important;
+  }
+}
+@media (min-width: 750px) and (max-width: 1024px) {
+  .diagram-container {
+    margin-top: 35px;
+  }
+  .chart-con canvas {
+    margin-top: 20px !important;
+    height: 95% !important;
+  }
+  [name="chart"] {
+    height: 75%;
+  }
+}
+.chart-con canvas {
+  width: 80% !important;
+  margin: 20px auto;
+  height: 80%;
+}
+.chart-con div {
+  display: none;
+}
+.chart-con .active {
+  display: block !important;
+}
+.chart-con h1 {
+  margin-top: 5px;
+  font-size: 15px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.chart-con h1 i {
+  margin: 5px 4px !important;
+}
+.diagram-container #diagram-error {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  box-shadow: 1px 2px 20px rgba(78, 77, 77, 0.507);
+  border-radius: 10px;
+}
+.diagram-container #diagram-error span {
+  display: block;
+  margin-top: 100px;
+}

@@ -1,0 +1,186 @@
+body,
+html {
+  overflow-x: hidden !important;
+}
+
+.jumbotron {
+  background-color: #272c7c;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw !important;
+  height: 450px;
+}
+.jumbotron img {
+  width: 400px;
+}
+.jumbotron-right {
+  width: 70%;
+  margin-left: 93px;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+.jumbotron-right h1 {
+  color: white;
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.jumbotron-right p {
+  color: rgb(241, 241, 241);
+  font-size: 15px;
+  margin-top: 10px;
+  /* width: 70ch; */
+  margin-bottom: 25px;
+}
+.jumbotron-right button {
+  padding: 8px 15px;
+  background-color: #eb0065;
+  border: none;
+  color: white;
+  margin: 40px 0 0 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 600px) {
+  #mega-flag {
+    border-radius: 50% !important;
+  }
+  .jumbotron {
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    height: auto !important;
+    position: relative;
+  }
+  .flag {
+    width: 50px !important;
+    height: auto !important;
+    position: static !important;
+  }
+  .flag-con {
+    margin-top: -30px !important;
+    justify-content: flex-start !important;
+  }
+  .root {
+    width: 100vw !important;
+  }
+  .jumbotron img {
+    width: 100px;
+  }
+  .jumbotron-right h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .jumbotron p {
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    z-index: 3;
+    position: relative;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);
+  }
+  .jumbotron button {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 3;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.582);
+  }
+  .jumbotron img {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+  }
+  #mega-flag {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  #mega-flag img {
+    object-fit: cover;
+  }
+  .paragraph {
+    width: 90% !important;
+  }
+  .jumbotron-right {
+    margin-left: 35px;
+  }
+}
+.jumbotron-left {
+  width: 30%;
+}
+#mega-flag {
+  border-radius: 10px;
+  width: 300px;
+  height: auto;
+  margin-top: 100px;
+}
+@media (min-width: 750px) and (max-width: 1024px) {
+  .jumbotron {
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .jumbotron img {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+  }
+
+  #mega-flag {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 70px;
+    margin-right: 20px;
+  }
+  .flag {
+    position: static !important;
+    width: 60px !important;
+    height: auto !important;
+  }
+  .flag-con {
+    width: 40vw !important;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+  }
+  .jumbotron p {
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    z-index: 3;
+    position: relative;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);
+  }
+  .jumbotron button {
+    margin-top: 50px;
+  }
+}
+.paragraph {
+  width: 60%;
+}
+.jumbotron .text {
+  margin-top: 8px;
+}
+.jumbotron .flag {
+  width: 100px;
+  height: 70px;
+  margin: 10px;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.507);
+}
+.jumbotron .flag-con {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* position: absolute;
+  bottom: 0 !important;
+  right: 0 !important; */
+  width: 400px;
+}

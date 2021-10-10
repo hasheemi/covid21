@@ -1,0 +1,78 @@
+.cegah {
+  width: 100vw;
+  height: auto;
+}
+.card {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 285px;
+  margin-top: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.274);
+  padding: 5px;
+  border-radius: 7px;
+  margin-right: 60px;
+  margin-left: 20px;
+}
+.card:hover {
+  transform: translateY(-10px);
+  transition: 100ms ease-in;
+}
+.cegah-main .card img {
+  width: 190px;
+  height: 190px;
+  align-self: center;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.cegah-main .card img:hover {
+  transform: scale(0.85);
+  transition: 200ms ease-in;
+}
+.cegah-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card p {
+  text-align: center;
+  margin: 5px;
+  color: grey;
+}
+.cegah h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 600px) {
+  .card {
+    width: 45% !important;
+    height: auto;
+    margin: 10px 0;
+  }
+  .card img {
+    width: 105px !important;
+    height: 105px !important;
+  }
+  .card p {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .card h4 {
+    text-align: center;
+  }
+}
+@media (min-width: 750px) and (max-width: 1024px) {
+  .card p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .card {
+    width: 30%;
+    margin: 20px 0;
+  }
+  .cegah {
+    margin-top: 40px;
+  }
+}

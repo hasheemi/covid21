@@ -1,0 +1,45 @@
+.vaccine-circle {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 10px rgba(78, 75, 75, 0.377);
+  background: #eb0065;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.vaccine-circle::before {
+  content: "";
+  position: absolute;
+  height: 84%;
+  width: 84%;
+  background-color: white;
+  border-radius: 50%;
+}
+.vaccine {
+  margin: 30px auto;
+  width: 80vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.vaccine-persentage {
+  position: relative;
+  font-weight: 600;
+  font-size: 20px;
+}
+.vaccine-desc {
+  width: 40%;
+}
+.vaccine-desc h4 {
+  margin: 10px 0 10px;
+}
+.vaccine-desc p {
+  margin-top: 5px;
+}
+@keyframes circle {
+}

@@ -1,0 +1,99 @@
+.head404,
+.negara404 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.head404 img {
+  width: 250px;
+  height: 250px;
+  animation-name: spin;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: 7ms ease-in;
+}
+.head404 span {
+  font-size: 250px;
+  color: #eb0065;
+  font-weight: 700;
+}
+.error h1 {
+  text-align: center;
+}
+.negara404 {
+  background-color: rgba(177, 173, 173, 0.3);
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  align-items: center;
+  animation-name: blob;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.error p {
+  text-align: center;
+  width: 250px;
+  margin: 20px auto;
+  font-size: 20px;
+}
+.error button {
+  background-color: #eb0065;
+  color: aliceblue;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+}
+.error a {
+  text-align: center;
+  margin: 10px 450px;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.error {
+  width: 80vw;
+  margin: 20px 10vw;
+}
+@media (max-width: 600px) {
+  .head404 img {
+    width: 160px;
+    height: 160px;
+  }
+  .head404 span {
+    font-size: 160px;
+  }
+  .error a {
+    margin: 10px 10vw;
+  }
+}
+@media (min-width: 750px) and (max-width: 1024px) {
+  .error a {
+    margin: 10px 27vw;
+  }
+}
+@keyframes blob {
+  0% {
+    border-radius: 63% 37% 48% 52% / 47% 40% 60% 53%;
+  }
+  25% {
+    border-radius: 29% 71% 48% 52% / 52% 45% 55% 48%;
+  }
+  50% {
+    border-radius: 53% 47% 33% 67% / 62% 45% 55% 38%;
+  }
+  75% {
+    border-radius: 36% 64% 33% 67% / 65% 35% 65% 35%;
+  }
+  100% {
+    /* border-radius: 49% 51% 39% 61% / 66% 35% 65% 34%; */
+    border-radius: 63% 37% 48% 52% / 47% 40% 60% 53%;
+  }
+}

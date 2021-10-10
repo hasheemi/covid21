@@ -1,0 +1,108 @@
+.panel {
+  width: 80vw;
+  background-color: white;
+  box-shadow: 1px 2px 20px rgba(78, 77, 77, 0.507);
+  height: auto;
+  border-radius: 10px;
+  margin: -60px 10vw 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.panel div {
+  width: 22%;
+  height: 80%;
+}
+@media (max-width: 600px) {
+  .panel .item {
+    width: 80%;
+    /* height: 50px;
+    margin: 10px; */
+  }
+  .panel {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 80vw;
+    z-index: 2;
+    flex-wrap: wrap;
+  }
+  .panel img {
+    width: 87px !important;
+    margin-right: 10px !important;
+  }
+  .item {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 2px !important;
+  }
+}
+@media (min-width: 750px) and (max-width: 1024px) {
+  .panel {
+    z-index: 3;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .panel div {
+    margin-top: 10px;
+  }
+  .item {
+    width: 40% !important;
+    justify-content: flex-start;
+    margin-right: 20px;
+  }
+  .item div {
+    margin: 10px 30px;
+  }
+}
+.item {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+  /* justify-content: flex-start; */
+  margin-left: 10px;
+  flex-wrap: wrap;
+}
+.item .panel-left div {
+  margin: 4px;
+}
+.item .panel-left div:first-child {
+  font-size: 20px;
+}
+.panel-left {
+  margin-left: 35px;
+}
+.item img {
+  width: 90px;
+  margin-right: 10px;
+}
+
+.panel-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.item b {
+  font-size: 23px;
+}
+.persentase {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 17px;
+}
+.persentase i {
+  margin-right: 8px;
+}
+#up {
+  color: red;
+}
+#down {
+  color: green;
+}

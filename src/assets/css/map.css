@@ -1,0 +1,21 @@
+.main-map {
+  width: 80vw;
+  height: auto;
+}
+.leaflet-container {
+  width: 80vw;
+  height: 600px;
+  margin: 30px 10vw;
+  overflow-y: hidden;
+  z-index: 1;
+}
+.map-icon,
+.custom-icon img {
+  width: 34px !important;
+  height: 17px !important;
+}
+@media (max-width: 600px) {
+  .leaflet-container {
+    height: 400px;
+  }
+}

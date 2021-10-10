@@ -1,0 +1,89 @@
+.gejala-main {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+.gejala h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+.gejala {
+  margin-top: 50px;
+}
+.gejala-right {
+  width: 50%;
+}
+.gejala-right img {
+  width: 70%;
+}
+.gejala-left {
+  width: 50%;
+  margin: 20px 10px;
+}
+.gejala-left .p {
+  margin-left: 120px;
+  margin-top: 100px;
+  width: 70%;
+  font-size: 18px;
+}
+.gejala-left p {
+  margin-bottom: 4px;
+}
+.gejala button {
+  padding: 5px 7px;
+  background-color: #eb0065;
+  border: none;
+  color: white;
+  margin: 40px 0 0 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.gejala .text {
+  margin-top: 8px;
+}
+@media screen and (max-width: 600px) {
+  .gejala {
+    margin-top: 220px;
+  }
+  .gejala h1 {
+    font-size: 20px;
+  }
+  .gejala-main {
+    flex-direction: column !important;
+  }
+  .gejala-right,
+  .gejala-left {
+    width: 100%;
+  }
+  .gejala-left {
+    order: 2 !important;
+  }
+  .gejala-right {
+    order: 1 !important;
+    margin-left: 50px;
+  }
+  .p p {
+    font-size: 15px;
+  }
+  .p {
+    margin-top: 1px !important;
+  }
+  .gejala button {
+    padding: 7px 10px;
+    margin-bottom: 20px;
+  }
+
+  .gejala .p {
+    margin-left: 20px;
+  }
+}
+.gejala li {
+  list-style-type: disc;
+  font-size: 15px;
+}
+#list {
+  margin: 10px 0;
+}
