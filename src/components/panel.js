@@ -8,9 +8,7 @@ export default class panel extends Component {
     return (
       <div className="panel" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
         <div className="item">
-          <div className="panel-right">
-            <img src={this.props.flag} alt="" />
-          </div>
+          <div className="panel-right">{this.props.cflag === "false" ? <img src={this.props.flag} alt="" /> : <img src={this.props.flag} alt="" id="panel-flag" />}</div>
           <div className="panel-left">
             <div>data corona</div>
             <div>

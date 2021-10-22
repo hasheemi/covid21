@@ -16,7 +16,9 @@ class Navbar extends Component {
           <label for="check" className="checkbtn">
             <i class="bx"></i>
           </label>
-          <label className="logo">Covid-21</label>
+          <a href="/" className="alogo">
+            <label className="logo">Covid-21</label>
+          </a>
           <ul>
             <li>
               <a className={isActive(this.props.active, "home")} href="/">
@@ -31,7 +33,7 @@ class Navbar extends Component {
             </li>
             <li>
               <a href="/peta" className={isActive(this.props.active, "map")}>
-                <i class="bx bx-map-alt bx-fw"></i> peta covid-19
+                <i class="bx bxs-map-alt bx-fw"></i> peta covid-19
               </a>
             </li>
           </ul>

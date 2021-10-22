@@ -103,6 +103,7 @@ class Home extends Component {
         />
         <Panel
           flag={this.state.flag}
+          cflag="false"
           from={this.state.from}
           positif={this.state.positif}
           sembuh={this.state.sembuh}

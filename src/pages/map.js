@@ -22,6 +22,9 @@ function Licon(params) {
 export default class Map extends Component {
   state = {
     data: [],
+    dataLoc: {},
+    longlat: 0,
+    lat: 0,
   };
   componentDidMount() {
     fetch("https://disease.sh/v3/covid-19/countries")
@@ -44,7 +47,7 @@ export default class Map extends Component {
         />
         <div className="main-map">
           <MapContainer center={[-5, 120]} zoom={3} scrollWheelZoom={false}>
-            <TileLayer attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            <TileLayer attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" noWrap={true} />
             {/* <Marker position={[-6, 120]}>
               <Popup>indonesia</Popup>
             </Marker> */}
@@ -63,7 +66,7 @@ export default class Map extends Component {
             ))}
           </MapContainer>
         </div>
-
+        {console.log(this.state.dataLoc)}
         <Footer />
       </>
     );
